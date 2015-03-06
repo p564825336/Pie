@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip" />
+
+   <com.exam.pie.CustomScrollView 
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff3f3f3"
+        android:fillViewport="true" > 
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/info_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:padding="8.0dip" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:contentDescription="Icon"
+                    android:padding="8.0dip" />
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0dip"
+                    android:layout_toRightOf="@id/icon"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/item_property1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_name"
+                    android:layout_marginTop="4.0dip"
+                    android:layout_toRightOf="@id/icon"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/item_property2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_property1"
+                    android:layout_toRightOf="@id/icon"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_below="@id/info_box"
+                android:background="@drawable/shadow_bottom" />
+
+            <RelativeLayout
+                android:id="@+id/pie_chart_box"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/pie_chart_size"
+                android:layout_below="@id/info_box"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8.0dip" >
+
+                <com.exam.pie.AnimationDoughnutPie
+                    android:id="@+id/outer_pie_chart"
+                    android:layout_width="fill_parent"
+                    android:clickable="true"
+                    android:layout_height="@dimen/pie_chart_size"
+                    android:layout_centerInParent="true" />
+
+                <View
+                    android:layout_width="@dimen/pie_chart_outer_ring_radius"
+                    android:layout_height="@dimen/pie_chart_outer_ring_radius"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/light_gray_oval" />
+
+                <com.exam.pie.AnimationDoughnutPie
+                    android:id="@+id/inner_pie_chart"
+                    android:layout_width="@dimen/inner_pie_chart_radius"
+                    android:layout_height="@dimen/inner_pie_chart_radius"
+                    android:layout_centerInParent="true" />
+
+                <View
+                    android:layout_width="@dimen/pie_chart_inner_ring_radius"
+                    android:layout_height="@dimen/pie_chart_inner_ring_radius"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/light_gray_oval" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/pie_chart_inner_ring_radius"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <TextView
+                        android:id="@+id/top_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"                       
+                        android:text="100%"
+                        android:textSize="@dimen/pie_chart_top_text_size" />
+
+                    <TextView
+                        android:id="@+id/bottom_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/top_text"
+                        android:layout_marginTop="@dimen/pie_chart_text_margin_top"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="18.0dip"
+                        android:paddingRight="18.0dip"
+                        android:text="哈哈2哈哈2"
+                        android:singleLine="true"
+                        android:textSize="@dimen/pie_chart_bottom_text_size" />
+
+                    <TextView
+                        android:id="@+id/middle_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff888888"
+                        android:textSize="@dimen/pie_chart_bottom_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/awards_and_comments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pie_chart_box"
+                android:orientation="vertical"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip" />
+
+            <LinearLayout
+                android:id="@+id/load_more_box"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/awards_and_comments"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/min_date_label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="4.0dip"
+                    android:textColor="#ff777777" />
+
+                <Button
+                    android:id="@+id/load_more_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/load_more_button_label" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.exam.pie.CustomScrollView>
+</RelativeLayout>

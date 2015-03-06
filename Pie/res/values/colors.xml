@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</item>
+    <item type="color" name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</item>
+    <color name="black">#ff000000</color>
+    
+    
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    
+    <color name="outer_circle_positive_color_one">#4ec320</color>
+    <color name="outer_circle_positive_color_two">#2eb340</color>
+    <color name="outer_circle_positive_color_three">#1ea320</color>
+    
+    <color name="outer_circle_negative_color_one">#ff4b45</color>
+    <color name="outer_circle_negative_color_two">#cf2b25</color>
+    <color name="outer_circle_negative_color_three">#bf2c25</color>
+    
+    
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="dojo_blue">#ff33c1ef</color>
+    <color name="dojo_blue_accent">#ff10a7e2</color>
+    <color name="dojo_blue_font">#ff0f7ffc</color>
+    <color name="dojo_blue_light">#ff43d1ff</color>
+    <color name="dojo_bright_green_accent">#ff27ae60</color>
+    <color name="dojo_bright_green_accent_light">#ff47ce80</color>
+    <color name="dojo_greenbtn">#ff7aca2d</color>
+    <color name="dojo_greenbtn_pressed">#ff43ca2d</color>
+    <color name="grey">#ffaaaaaa</color>
+    <color name="row_pressed">#ff33b5e5</color>
+    <color name="row_selected">#ff0099cc</color>
+    <color name="transparent">#00000000</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</item>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</item>
+    <color name="white">#ffffffff</color>
+</resources>
